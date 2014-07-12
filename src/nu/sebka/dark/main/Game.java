@@ -20,7 +20,7 @@ public class Game extends JFrame implements Runnable, KeyListener, MouseListener
 
 	private static int WIDTH = 640;
 	private static int HEIGHT = WIDTH / 16 * 9;
-	private static int SCALE = 3;
+	private static int SCALE = 2;
 
 	public static Dimension FRAMESIZE = new Dimension(WIDTH * SCALE, HEIGHT * SCALE);
 	public static Dimension RENDERSIZE = new Dimension(FRAMESIZE.width / 2, FRAMESIZE.height / 2);
@@ -35,6 +35,7 @@ public class Game extends JFrame implements Runnable, KeyListener, MouseListener
 	private boolean init = false;
 
 	public static int darkSize = 8;
+	public static int GUISize = 1;
 	
 	public static boolean[] keyPress = new boolean[256];
 

@@ -78,7 +78,7 @@ public class GameScene extends Scene {
 	
 	public void drawHealth(Graphics g){
 		for(int i = 0; i < player.health/10; i++){
-			g.drawImage(ImageLoader.loadImage("images/gui/heart.png"), 4+16*2*i, Game.RENDERSIZE.height-(16*2+4), 16*2, 16*2, null);
+			g.drawImage(ImageLoader.loadImage("images/gui/heart.png"), 4+16*Game.GUISize*i, Game.RENDERSIZE.height-(16*Game.GUISize+4), 16*Game.GUISize, 16*Game.GUISize, null);
 		}
 	}
 	
@@ -86,7 +86,7 @@ public class GameScene extends Scene {
 		g.setColor(Color.BLUE);
 		for(int i = 0; i < player.mana/10.1; i++){
 			
-			g.drawImage(ImageLoader.loadImage("images/gui/mana.png"), 4+16*2*i, Game.RENDERSIZE.height-(16*4+4), 16*2, 16*2, null);
+			g.drawImage(ImageLoader.loadImage("images/gui/mana.png"), 4+16*Game.GUISize*i, Game.RENDERSIZE.height-(16*Game.GUISize*2+4), 16*Game.GUISize, 16*Game.GUISize, null);
 		}
 	}
 	
